@@ -1,229 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <title>Trivia Game</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="" X-UA-Compatible content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet">
 
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+
+	<title>Movie Trivia</title>
 </head>
-
 <body>
-  <div class=jumbotron>
 
-    <h1>Movie Trivia Game</h1>
-  </div>
-
-  <div id="time-left"></div>
-
-  <div class="row">
-      <div class="col-lg-9">
-        <div class="card" id=startCard>
-  
-          <p>
-            This is a short movie trivia game. When the game begins you will be given 30 seconds to answer a movie trivia
-            question by clicking on the correct answer. Once you have answered, the game will move on to a new question.
-            If your answer is correct, you will be given a point. If the time runs out before you answer or if you choose
-            an incorrect answer, you will not receive a point. The game begins when you push the “Start” button below.
-          </p>
-          <div class="row">
-            <button id="startBtn">Start</button>
-  
-          </div>
-  
-        </div>
-      </div>
-    </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id="card1">
-
-        <p>
-          Which actress was originally offered the role of Clarice Starling in Silence of the Lambs?
-        </p>
-
-        <div class="row">
-          <button class="answer1">Meg Ryan</button>
-
-          <button class="answer2">Michelle Pfeiffer</button>
-
-          <button class="answer3">Cher</button>
-
-          <button class="answer4">Julia Roberts</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=card2>
-
-        <p>
-          Which movie had a character named Peeta Mellark?
-        </p>
-        <div class="row">
-          <button class="answer1">Spectre</button>
-
-          <button class="answer2">The Hunger Games: Mockingjay – Part 2</button>
-
-          <button class="answer3">Black Mass</button>
-
-          <button class="answer4">Pan</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=card3>
-
-        <p>
-          Which of the following films was not based on a book by Stephen King?
-        </p>
-        <div class="row">
-          <button class="answer1">Pet Sematary</button>
-
-          <button class="answer2">The Shining</button>
-
-          <button class="answer3">Misery</button>
-
-          <button class="answer4">The Hand That Rocks the Cradle</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=card4>
-
-        <p>
-          What movie had the quote “with great power comes great responsibility”?
-        </p>
-        <div class="row">
-          <button class="answer1">The Lord of the Rings, The Two Towers</button>
-
-          <button class="answer2">V for Vendetta</button>
-
-          <button class="answer3">Spiderman</button>
-
-          <button class="answer4">Monsters, Inc</button>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=card5>
-
-        <p>
-          Which actor appeared in Dogma, Good Will Hunting, and The Rainmaker?
-        </p>
-        <div class="row">
-          <button class="answer1">Ben Affleck</button>
-
-          <button class="answer2">Robert Downey Jr.</button>
-
-          <button class="answer3">Matt Damon</button>
-
-          <button class="answer4">Tom Cruise</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
+	<div class="jumbotron col-md-12" id="jumbo1">
+	</div>
 
 
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=card6>
-
-        <p>
-          What movie’s last line was: “What about the person we show it to? What's happens to them?”
-        </p>
-        <div class="row">
-          <button class="answer1">The Ring</button>
-
-          <button class="answer2">Das Leben der Anderen</button>
-
-          <button class="answer3">Brokeback Mountain</button>
-
-          <button class="answer4">What Women Want</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=incorrectCard>
-
-        <img src="images/slideIncorrect.jpg" alt="incorrect">
-
-
-      </div>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=correctCard>
-
-        <img src="images/slideCorrect.jpg" alt="correct">
+			<h1 id="triviaTitle">Movie Trivia</h1>
+		
+		<div class="jumbotron2" id="startGame">
+            <br>
+            <h3>Once you press the "Start" button, you will be given a series of questions.</h3> 
+            <h3>Click on the answer of your choice.</h3>
+            <h3>  You will have 20 seconds to answer each question.</h3>
+            <br>
+            <br>
+			<button id="startBtn">START</button>
+		</div>
+	
+		<div class="jumbotron2" id="gameArea">
+			
+			<div class="container" id="ques">
+				<div id="time"></div>
+				<div class="question"></div><br>
+				<div class="options"></div>
+			</div>
+			
+			<div class="container" id="response">
+				<div id="text"></div>
+				<div id="correctAnswer"></div>
+				
+			</div>
+			
+			<div class="container" id="outcome">
+				<div id="resultText"></div>
+				<div id="correctAnswers"></div>
+				<div id="incorrectAnswers"></div>
+				<div id="outOfTime"></div><br>
+				<button id="playAgain"></button>
+			</div>
+		</div>
+	</div>
 
 
-      </div>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=timeoutCard>
-
-        <img src="images/slideTimeout.jpg" alt="incorrect">
-
-
-      </div>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-9">
-      <div class="card" id=finalCard>
-<br>
-        <h2> Here's how you did!</h2>
-        <br>
-        <h4>Number Correct =<span class="correct"></span></h4>
-        <h4>Number Incorrect =<span class="incorrect"></span></h4>
-        <h4>Number of Timeouts =<span class="timeout"></span></h4>
-      </div>
-
-    </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="javascript/game.js"></script>
-
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="assets/javascript/game.js"></script>
 </body>
-
 </html>

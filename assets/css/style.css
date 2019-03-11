@@ -1,0 +1,58 @@
+
+  #jumbo1 {
+	background-image: url("../images/questionBackground.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	vertical-align: center;
+  }
+
+.jumbotron2 {
+	text-align: center;
+	font-size: 20px;
+	height: 250px;
+	vertical-align: 50%;
+}
+
+  body {
+	  background-color: black;
+	  background-image: url("../images/cinema.jpg");
+	  background-repeat: no-repeat;
+  }
+
+h1 {
+	color: white;
+	text-align: left;
+	text-indent: 380px;
+	font-size: 36px;
+}
+
+  #startGame {
+	  background-color: rgb(255, 208, 0);
+	  width: 940px;
+	  font-size: 16px;
+  }
+
+  #startBtn {
+	  height: 50px;
+	  width: 100px;
+	  font-size: 20px;
+	  color: white;
+	  background-color: red;
+  }
+
+	#playAgain {
+	  height: 50px;
+	  width: 125px;
+	  font-size: 20px;
+	  color: white;
+	  background-color: red;
+  }
+  #gameArea {
+	background-color: rgb(255, 208, 0);
+	width: 940px;
+	padding: 10px;
+  }
+
+#time {
+	color:black;
+}
